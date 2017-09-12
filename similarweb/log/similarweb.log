@@ -1,0 +1,939 @@
+2017-07-13 16:15:52 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: similarweb)
+2017-07-13 16:15:52 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'similarweb', 'CONCURRENT_REQUESTS': 32, 'COOKIES_ENABLED': False, 'DOWNLOAD_TIMEOUT': 3, 'LOG_FILE': 'log/similarweb.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'similarweb.spiders', 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 402, 401, 403, 404, 408, 429, 302, 301, 304], 'RETRY_TIMES': 32, 'SPIDER_MODULES': ['similarweb.spiders']}
+2017-07-13 16:15:52 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-07-13 16:15:52 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-07-13 16:15:52 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-07-13 16:15:52 [scrapy.middleware] INFO: Enabled item pipelines:
+['similarweb.pipelines.MySQLPipeline']
+2017-07-13 16:15:52 [scrapy.core.engine] INFO: Spider opened
+2017-07-13 16:15:53 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-07-13 16:15:53 [root] INFO: Enter similarweb spider...
+2017-07-13 16:15:53 [root] INFO: yield uv request for pid:14 url:xiaomishu.com
+2017-07-13 16:15:53 [root] INFO: yield uv request for pid:18 url:meishixing.com
+2017-07-13 16:15:53 [root] INFO: yield uv request for pid:19 url:fanqie.com
+2017-07-13 16:15:53 [root] INFO: yield uv request for pid:30 url:hm.com
+2017-07-13 16:15:53 [root] INFO: yield uv request for pid:38 url:sfbest.com
+2017-07-13 16:15:53 [root] INFO: yield uv request for pid:42 url:feiniu.com
+2017-07-13 16:15:53 [root] INFO: yield uv request for pid:59 url:189mv.cn
+2017-07-13 16:15:53 [root] INFO: yield uv request for pid:66 url:qunar.com
+2017-07-13 16:15:53 [root] INFO: yield uv request for pid:67 url:wanzhoumo.com
+2017-07-13 16:15:53 [root] INFO: yield uv request for pid:68 url:breadtrip.com
+2017-07-13 16:15:55 [root] INFO: Get uv data, pid:30, url:hm.com
+2017-07-13 16:15:55 [root] INFO: yield pv request for pid:30 url:hm.com
+2017-07-13 16:15:55 [root] INFO: update titan ok, pid:30
+2017-07-13 16:15:55 [root] ERROR: insert similarweb_uv exception, pid:30
+2017-07-13 16:15:55 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:55 [root] INFO: Get uv data, pid:67, url:wanzhoumo.com
+2017-07-13 16:15:55 [root] INFO: yield pv request for pid:67 url:wanzhoumo.com
+2017-07-13 16:15:55 [root] INFO: update titan ok, pid:67
+2017-07-13 16:15:55 [root] ERROR: insert similarweb_uv exception, pid:67
+2017-07-13 16:15:55 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:55 [root] INFO: Get uv data, pid:14, url:xiaomishu.com
+2017-07-13 16:15:55 [root] INFO: yield pv request for pid:14 url:xiaomishu.com
+2017-07-13 16:15:55 [root] INFO: update titan ok, pid:14
+2017-07-13 16:15:55 [root] ERROR: insert similarweb_uv exception, pid:14
+2017-07-13 16:15:55 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:55 [root] INFO: Get uv data, pid:38, url:sfbest.com
+2017-07-13 16:15:55 [root] INFO: yield pv request for pid:38 url:sfbest.com
+2017-07-13 16:15:55 [root] INFO: update titan ok, pid:38
+2017-07-13 16:15:55 [root] ERROR: insert similarweb_uv exception, pid:38
+2017-07-13 16:15:55 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:55 [root] INFO: Get uv data, pid:59, url:189mv.cn
+2017-07-13 16:15:55 [root] INFO: yield pv request for pid:59 url:189mv.cn
+2017-07-13 16:15:55 [root] INFO: update titan ok, pid:59
+2017-07-13 16:15:55 [root] ERROR: insert similarweb_uv exception, pid:59
+2017-07-13 16:15:55 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:55 [root] INFO: Get uv data, pid:18, url:meishixing.com
+2017-07-13 16:15:55 [root] INFO: yield pv request for pid:18 url:meishixing.com
+2017-07-13 16:15:55 [root] INFO: update titan ok, pid:18
+2017-07-13 16:15:55 [root] ERROR: insert similarweb_uv exception, pid:18
+2017-07-13 16:15:55 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:55 [root] INFO: Get uv data, pid:19, url:fanqie.com
+2017-07-13 16:15:55 [root] INFO: yield pv request for pid:19 url:fanqie.com
+2017-07-13 16:15:55 [root] INFO: update titan ok, pid:19
+2017-07-13 16:15:55 [root] ERROR: insert similarweb_uv exception, pid:19
+2017-07-13 16:15:55 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:56 [root] INFO: Get pv data, pid:38, url:sfbest.com
+2017-07-13 16:15:56 [root] ERROR: insert similarweb_pv exception, pid:38
+2017-07-13 16:15:56 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:56 [root] INFO: Get uv data, pid:42, url:feiniu.com
+2017-07-13 16:15:56 [root] INFO: yield pv request for pid:42 url:feiniu.com
+2017-07-13 16:15:56 [root] INFO: update titan ok, pid:42
+2017-07-13 16:15:56 [root] ERROR: insert similarweb_uv exception, pid:42
+2017-07-13 16:15:56 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:56 [root] INFO: Get pv data, pid:14, url:xiaomishu.com
+2017-07-13 16:15:56 [root] ERROR: insert similarweb_pv exception, pid:14
+2017-07-13 16:15:56 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:56 [root] INFO: Get uv data, pid:68, url:breadtrip.com
+2017-07-13 16:15:56 [root] INFO: yield pv request for pid:68 url:breadtrip.com
+2017-07-13 16:15:56 [root] INFO: update titan ok, pid:68
+2017-07-13 16:15:56 [root] ERROR: insert similarweb_uv exception, pid:68
+2017-07-13 16:15:56 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:56 [root] INFO: Get pv data, pid:30, url:hm.com
+2017-07-13 16:15:56 [root] ERROR: insert similarweb_pv exception, pid:30
+2017-07-13 16:15:56 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:56 [root] INFO: Get uv data, pid:66, url:qunar.com
+2017-07-13 16:15:56 [root] INFO: yield pv request for pid:66 url:qunar.com
+2017-07-13 16:15:56 [root] INFO: update titan ok, pid:66
+2017-07-13 16:15:56 [root] ERROR: insert similarweb_uv exception, pid:66
+2017-07-13 16:15:56 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:56 [root] INFO: Get pv data, pid:59, url:189mv.cn
+2017-07-13 16:15:56 [root] ERROR: insert similarweb_pv exception, pid:59
+2017-07-13 16:15:56 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:56 [root] INFO: Get pv data, pid:67, url:wanzhoumo.com
+2017-07-13 16:15:56 [root] ERROR: insert similarweb_pv exception, pid:67
+2017-07-13 16:15:56 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:56 [root] INFO: Get pv data, pid:18, url:meishixing.com
+2017-07-13 16:15:56 [root] ERROR: insert similarweb_pv exception, pid:18
+2017-07-13 16:15:56 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:56 [root] INFO: Get pv data, pid:19, url:fanqie.com
+2017-07-13 16:15:56 [root] ERROR: insert similarweb_pv exception, pid:19
+2017-07-13 16:15:56 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:56 [root] INFO: Get pv data, pid:42, url:feiniu.com
+2017-07-13 16:15:56 [root] ERROR: insert similarweb_pv exception, pid:42
+2017-07-13 16:15:56 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:56 [root] INFO: Get pv data, pid:68, url:breadtrip.com
+2017-07-13 16:15:56 [root] ERROR: insert similarweb_pv exception, pid:68
+2017-07-13 16:15:56 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:56 [root] INFO: Get pv data, pid:66, url:qunar.com
+2017-07-13 16:15:56 [root] ERROR: insert similarweb_pv exception, pid:66
+2017-07-13 16:15:56 [root] ERROR: 'mongo_id'
+2017-07-13 16:15:56 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-07-13 16:15:56 [scrapy.core.engine] ERROR: Scraper close failure
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+TypeError: close_spider() takes 1 positional argument but 2 were given
+2017-07-13 16:15:56 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 10579,
+ 'downloader/request_count': 21,
+ 'downloader/request_method_count/GET': 21,
+ 'downloader/response_bytes': 25252,
+ 'downloader/response_count': 21,
+ 'downloader/response_status_count/200': 21,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 7, 13, 8, 15, 56, 788848),
+ 'item_scraped_count': 20,
+ 'log_count/ERROR': 41,
+ 'log_count/INFO': 58,
+ 'request_depth_max': 2,
+ 'response_received_count': 21,
+ 'scheduler/dequeued': 21,
+ 'scheduler/dequeued/memory': 21,
+ 'scheduler/enqueued': 21,
+ 'scheduler/enqueued/memory': 21,
+ 'start_time': datetime.datetime(2017, 7, 13, 8, 15, 53, 448234)}
+2017-07-13 16:15:56 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-07-13 16:52:40 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: similarweb)
+2017-07-13 16:52:40 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'similarweb', 'CONCURRENT_REQUESTS': 32, 'COOKIES_ENABLED': False, 'DOWNLOAD_TIMEOUT': 3, 'LOG_FILE': 'log/similarweb.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'similarweb.spiders', 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 402, 401, 403, 404, 408, 429, 302, 301, 304], 'RETRY_TIMES': 32, 'SPIDER_MODULES': ['similarweb.spiders']}
+2017-07-13 16:52:41 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-07-13 16:52:42 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-07-13 16:52:42 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-07-13 16:52:42 [scrapy.middleware] INFO: Enabled item pipelines:
+['similarweb.pipelines.MySQLPipeline']
+2017-07-13 16:52:42 [scrapy.core.engine] INFO: Spider opened
+2017-07-13 16:52:42 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-07-13 16:52:43 [root] INFO: Enter similarweb spider...
+2017-07-13 16:52:43 [root] INFO: yield uv request for pid:14 url:xiaomishu.com
+2017-07-13 16:52:43 [root] INFO: yield uv request for pid:18 url:meishixing.com
+2017-07-13 16:52:43 [root] INFO: yield uv request for pid:19 url:fanqie.com
+2017-07-13 16:52:43 [root] INFO: yield uv request for pid:30 url:hm.com
+2017-07-13 16:52:43 [root] INFO: yield uv request for pid:38 url:sfbest.com
+2017-07-13 16:52:43 [root] INFO: yield uv request for pid:42 url:feiniu.com
+2017-07-13 16:52:43 [root] INFO: yield uv request for pid:59 url:189mv.cn
+2017-07-13 16:52:43 [root] INFO: yield uv request for pid:66 url:qunar.com
+2017-07-13 16:52:43 [root] INFO: yield uv request for pid:67 url:wanzhoumo.com
+2017-07-13 16:52:43 [root] INFO: yield uv request for pid:68 url:breadtrip.com
+2017-07-13 16:52:44 [root] INFO: Get uv data, pid:59, url:189mv.cn
+2017-07-13 16:52:44 [root] INFO: yield pv request for pid:59 url:189mv.cn
+2017-07-13 16:52:44 [root] INFO: update titan ok, pid:59
+2017-07-13 16:52:45 [root] INFO: insert similarweb_uv into mysql ok, pid:59
+2017-07-13 16:52:45 [root] INFO: Get uv data, pid:38, url:sfbest.com
+2017-07-13 16:52:45 [root] INFO: yield pv request for pid:38 url:sfbest.com
+2017-07-13 16:52:45 [root] INFO: update titan ok, pid:38
+2017-07-13 16:52:46 [root] INFO: insert similarweb_uv into mysql ok, pid:38
+2017-07-13 16:52:46 [root] INFO: Get uv data, pid:30, url:hm.com
+2017-07-13 16:52:46 [root] INFO: yield pv request for pid:30 url:hm.com
+2017-07-13 16:52:46 [root] INFO: update titan ok, pid:30
+2017-07-13 16:52:47 [root] INFO: insert similarweb_uv into mysql ok, pid:30
+2017-07-13 16:52:47 [root] INFO: Get uv data, pid:66, url:qunar.com
+2017-07-13 16:52:47 [root] INFO: yield pv request for pid:66 url:qunar.com
+2017-07-13 16:52:47 [root] INFO: update titan ok, pid:66
+2017-07-13 16:52:47 [root] INFO: insert similarweb_uv into mysql ok, pid:66
+2017-07-13 16:52:47 [root] INFO: Get uv data, pid:67, url:wanzhoumo.com
+2017-07-13 16:52:47 [root] INFO: yield pv request for pid:67 url:wanzhoumo.com
+2017-07-13 16:52:47 [root] INFO: update titan ok, pid:67
+2017-07-13 16:52:49 [root] INFO: insert similarweb_uv into mysql ok, pid:67
+2017-07-13 16:52:49 [root] INFO: Get uv data, pid:42, url:feiniu.com
+2017-07-13 16:52:49 [root] INFO: yield pv request for pid:42 url:feiniu.com
+2017-07-13 16:52:49 [root] INFO: update titan ok, pid:42
+2017-07-13 16:52:49 [root] INFO: insert similarweb_uv into mysql ok, pid:42
+2017-07-13 16:52:49 [root] INFO: Get uv data, pid:68, url:breadtrip.com
+2017-07-13 16:52:49 [root] INFO: yield pv request for pid:68 url:breadtrip.com
+2017-07-13 16:52:49 [root] INFO: update titan ok, pid:68
+2017-07-13 16:52:49 [root] INFO: insert similarweb_uv into mysql ok, pid:68
+2017-07-13 16:52:50 [root] INFO: Get uv data, pid:19, url:fanqie.com
+2017-07-13 16:52:50 [root] INFO: yield pv request for pid:19 url:fanqie.com
+2017-07-13 16:52:50 [root] INFO: update titan ok, pid:19
+2017-07-13 16:52:50 [root] INFO: insert similarweb_uv into mysql ok, pid:19
+2017-07-13 16:52:50 [root] INFO: Get uv data, pid:18, url:meishixing.com
+2017-07-13 16:52:50 [root] INFO: yield pv request for pid:18 url:meishixing.com
+2017-07-13 16:52:50 [root] INFO: update titan ok, pid:18
+2017-07-13 16:52:50 [root] INFO: insert similarweb_uv into mysql ok, pid:18
+2017-07-13 16:52:50 [root] INFO: Get uv data, pid:14, url:xiaomishu.com
+2017-07-13 16:52:50 [root] INFO: yield pv request for pid:14 url:xiaomishu.com
+2017-07-13 16:52:50 [root] INFO: update titan ok, pid:14
+2017-07-13 16:52:51 [root] INFO: insert similarweb_uv into mysql ok, pid:14
+2017-07-13 16:52:51 [root] INFO: Get pv data, pid:59, url:189mv.cn
+2017-07-13 16:52:53 [root] INFO: insert similarweb_pv into mysql ok, pid:59
+2017-07-13 16:52:53 [root] INFO: Get pv data, pid:30, url:hm.com
+2017-07-13 16:52:53 [root] INFO: insert similarweb_pv into mysql ok, pid:30
+2017-07-13 16:52:53 [root] INFO: Get pv data, pid:42, url:feiniu.com
+2017-07-13 16:52:55 [root] INFO: insert similarweb_pv into mysql ok, pid:42
+2017-07-13 16:52:55 [root] INFO: Get pv data, pid:66, url:qunar.com
+2017-07-13 16:52:57 [root] INFO: insert similarweb_pv into mysql ok, pid:66
+2017-07-13 16:52:57 [root] INFO: Get pv data, pid:67, url:wanzhoumo.com
+2017-07-13 16:52:59 [root] INFO: insert similarweb_pv into mysql ok, pid:67
+2017-07-13 16:52:59 [root] INFO: Get pv data, pid:38, url:sfbest.com
+2017-07-13 16:53:00 [root] INFO: insert similarweb_pv into mysql ok, pid:38
+2017-07-13 16:53:00 [root] INFO: Get pv data, pid:68, url:breadtrip.com
+2017-07-13 16:53:01 [root] INFO: insert similarweb_pv into mysql ok, pid:68
+2017-07-13 16:53:01 [root] INFO: Get pv data, pid:19, url:fanqie.com
+2017-07-13 16:53:01 [root] INFO: insert similarweb_pv into mysql ok, pid:19
+2017-07-13 16:53:01 [root] INFO: Get pv data, pid:18, url:meishixing.com
+2017-07-13 16:53:02 [root] INFO: insert similarweb_pv into mysql ok, pid:18
+2017-07-13 16:53:02 [root] INFO: Get pv data, pid:14, url:xiaomishu.com
+2017-07-13 16:53:02 [root] INFO: insert similarweb_pv into mysql ok, pid:14
+2017-07-13 16:53:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-07-13 16:53:02 [scrapy.core.engine] ERROR: Scraper close failure
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+TypeError: close_spider() takes 1 positional argument but 2 were given
+2017-07-13 16:53:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 10579,
+ 'downloader/request_count': 21,
+ 'downloader/request_method_count/GET': 21,
+ 'downloader/response_bytes': 25252,
+ 'downloader/response_count': 21,
+ 'downloader/response_status_count/200': 21,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 7, 13, 8, 53, 2, 962723),
+ 'item_scraped_count': 20,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 78,
+ 'request_depth_max': 2,
+ 'response_received_count': 21,
+ 'scheduler/dequeued': 21,
+ 'scheduler/dequeued/memory': 21,
+ 'scheduler/enqueued': 21,
+ 'scheduler/enqueued/memory': 21,
+ 'start_time': datetime.datetime(2017, 7, 13, 8, 52, 42, 962959)}
+2017-07-13 16:53:02 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-07-18 14:18:00 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: similarweb)
+2017-07-18 14:18:00 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'similarweb', 'CONCURRENT_REQUESTS': 32, 'COOKIES_ENABLED': False, 'DOWNLOAD_TIMEOUT': 3, 'LOG_FILE': 'log/similarweb.log', 'NEWSPIDER_MODULE': 'similarweb.spiders', 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 402, 401, 403, 404, 408, 429, 302, 301, 304], 'RETRY_TIMES': 32, 'SPIDER_MODULES': ['similarweb.spiders']}
+2017-07-18 14:18:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-07-18 14:18:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-07-18 14:18:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-07-18 14:18:02 [scrapy.middleware] INFO: Enabled item pipelines:
+['similarweb.pipelines.MySQLPipeline']
+2017-07-18 14:18:02 [scrapy.core.engine] INFO: Spider opened
+2017-07-18 14:18:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-07-18 14:18:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-07-18 14:18:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.baidu.com> (referer: None)
+2017-07-18 14:18:03 [root] INFO: Enter similarweb spider...
+2017-07-18 14:18:03 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.baidu.com> (referer: None)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:/Users/Administrator/PycharmProjects/untitled/similarweb\similarweb\spiders\spider.py", line 46, in parse
+    cursor.execute(sql)
+  File "E:\python\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "E:\python\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "E:\python\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'dw_online.data_for_similarweb' doesn't exist")
+2017-07-18 14:18:03 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-07-18 14:18:03 [scrapy.core.engine] ERROR: Scraper close failure
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+TypeError: close_spider() takes 1 positional argument but 2 were given
+2017-07-18 14:18:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 211,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 1476,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 7, 18, 6, 18, 3, 652149),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/ProgrammingError': 1,
+ 'start_time': datetime.datetime(2017, 7, 18, 6, 18, 2, 791128)}
+2017-07-18 14:18:03 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-07-18 14:19:57 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: similarweb)
+2017-07-18 14:19:57 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'similarweb', 'CONCURRENT_REQUESTS': 32, 'COOKIES_ENABLED': False, 'DOWNLOAD_TIMEOUT': 3, 'LOG_FILE': 'log/similarweb.log', 'NEWSPIDER_MODULE': 'similarweb.spiders', 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 402, 401, 403, 404, 408, 429, 302, 301, 304], 'RETRY_TIMES': 32, 'SPIDER_MODULES': ['similarweb.spiders']}
+2017-07-18 14:19:58 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-07-18 14:19:58 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-07-18 14:19:58 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-07-18 14:19:58 [scrapy.middleware] INFO: Enabled item pipelines:
+['similarweb.pipelines.MySQLPipeline']
+2017-07-18 14:19:58 [scrapy.core.engine] INFO: Spider opened
+2017-07-18 14:19:58 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-07-18 14:19:58 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-07-18 14:19:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.baidu.com> (referer: None)
+2017-07-18 14:19:58 [root] INFO: Enter similarweb spider...
+2017-07-18 14:19:58 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.baidu.com> (referer: None)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:/Users/Administrator/PycharmProjects/untitled/similarweb\similarweb\spiders\spider.py", line 46, in parse
+    cursor.execute(sql)
+  File "E:\python\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "E:\python\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "E:\python\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'dw_online.data_for_similarweb' doesn't exist")
+2017-07-18 14:19:58 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-07-18 14:19:58 [scrapy.core.engine] ERROR: Scraper close failure
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+TypeError: close_spider() takes 1 positional argument but 2 were given
+2017-07-18 14:19:58 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 211,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 1476,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 7, 18, 6, 19, 58, 473283),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/ProgrammingError': 1,
+ 'start_time': datetime.datetime(2017, 7, 18, 6, 19, 58, 252184)}
+2017-07-18 14:19:58 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-07-18 14:20:16 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: similarweb)
+2017-07-18 14:20:16 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'similarweb', 'CONCURRENT_REQUESTS': 32, 'COOKIES_ENABLED': False, 'DOWNLOAD_TIMEOUT': 3, 'LOG_FILE': 'log/similarweb.log', 'NEWSPIDER_MODULE': 'similarweb.spiders', 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 402, 401, 403, 404, 408, 429, 302, 301, 304], 'RETRY_TIMES': 32, 'SPIDER_MODULES': ['similarweb.spiders']}
+2017-07-18 14:20:16 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-07-18 14:20:17 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-07-18 14:20:17 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-07-18 14:20:17 [scrapy.middleware] INFO: Enabled item pipelines:
+['similarweb.pipelines.MySQLPipeline']
+2017-07-18 14:20:17 [scrapy.core.engine] INFO: Spider opened
+2017-07-18 14:20:17 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-07-18 14:20:17 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-07-18 14:20:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.baidu.com> (referer: None)
+2017-07-18 14:20:54 [root] INFO: Enter similarweb spider...
+2017-07-18 14:20:54 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.baidu.com> (referer: None)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:/Users/Administrator/PycharmProjects/untitled/similarweb\similarweb\spiders\spider.py", line 46, in parse
+    cursor.execute(sql)
+  File "E:\python\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "E:\python\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "E:\python\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'dw_online.data_for_similarweb' doesn't exist")
+2017-07-18 14:20:54 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-07-18 14:20:54 [scrapy.core.engine] ERROR: Scraper close failure
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+TypeError: close_spider() takes 1 positional argument but 2 were given
+2017-07-18 14:20:54 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 211,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 1476,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 7, 18, 6, 20, 54, 171247),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/ProgrammingError': 1,
+ 'start_time': datetime.datetime(2017, 7, 18, 6, 20, 17, 86798)}
+2017-07-18 14:20:54 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-07-18 14:21:06 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: similarweb)
+2017-07-18 14:21:06 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'similarweb', 'CONCURRENT_REQUESTS': 32, 'COOKIES_ENABLED': False, 'DOWNLOAD_TIMEOUT': 3, 'LOG_FILE': 'log/similarweb.log', 'NEWSPIDER_MODULE': 'similarweb.spiders', 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 402, 401, 403, 404, 408, 429, 302, 301, 304], 'RETRY_TIMES': 32, 'SPIDER_MODULES': ['similarweb.spiders']}
+2017-07-18 14:21:06 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-07-18 14:21:06 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-07-18 14:21:06 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-07-18 14:21:07 [scrapy.middleware] INFO: Enabled item pipelines:
+['similarweb.pipelines.MySQLPipeline']
+2017-07-18 14:21:07 [scrapy.core.engine] INFO: Spider opened
+2017-07-18 14:21:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-07-18 14:21:07 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-07-18 14:21:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.baidu.com> (referer: None)
+2017-07-18 14:21:40 [root] INFO: Enter similarweb spider...
+2017-07-18 14:22:33 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.baidu.com> (referer: None)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:/Users/Administrator/PycharmProjects/untitled/similarweb\similarweb\spiders\spider.py", line 46, in parse
+    cursor.execute(sql)
+  File "E:\python\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "E:\python\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "E:\python\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'dw_online.data_for_similarweb' doesn't exist")
+2017-07-18 14:22:53 [scrapy.extensions.logstats] INFO: Crawled 1 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2017-07-18 14:22:53 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-07-18 14:22:53 [scrapy.core.engine] ERROR: Scraper close failure
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+TypeError: close_spider() takes 1 positional argument but 2 were given
+2017-07-18 14:22:53 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 211,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 1476,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 7, 18, 6, 22, 53, 392212),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 9,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/ProgrammingError': 1,
+ 'start_time': datetime.datetime(2017, 7, 18, 6, 21, 7, 35554)}
+2017-07-18 14:22:53 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-07-18 14:23:05 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: similarweb)
+2017-07-18 14:23:05 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'similarweb', 'CONCURRENT_REQUESTS': 32, 'COOKIES_ENABLED': False, 'DOWNLOAD_TIMEOUT': 3, 'LOG_FILE': 'log/similarweb.log', 'NEWSPIDER_MODULE': 'similarweb.spiders', 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 402, 401, 403, 404, 408, 429, 302, 301, 304], 'RETRY_TIMES': 32, 'SPIDER_MODULES': ['similarweb.spiders']}
+2017-07-18 14:23:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-07-18 14:23:05 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-07-18 14:23:05 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-07-18 14:23:05 [scrapy.middleware] INFO: Enabled item pipelines:
+['similarweb.pipelines.MySQLPipeline']
+2017-07-18 14:23:05 [scrapy.core.engine] INFO: Spider opened
+2017-07-18 14:23:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-07-18 14:23:05 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-07-18 14:23:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.baidu.com> (referer: None)
+2017-07-18 14:23:10 [root] INFO: Enter similarweb spider...
+2017-07-18 14:23:11 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.baidu.com> (referer: None)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:/Users/Administrator/PycharmProjects/untitled/similarweb\similarweb\spiders\spider.py", line 46, in parse
+    cursor.execute(sql)
+  File "E:\python\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "E:\python\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "E:\python\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'dw_online.data_for_similarweb' doesn't exist")
+2017-07-18 14:23:12 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-07-18 14:23:12 [scrapy.core.engine] ERROR: Scraper close failure
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+TypeError: close_spider() takes 1 positional argument but 2 were given
+2017-07-18 14:23:12 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 211,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 1476,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 7, 18, 6, 23, 12, 32787),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/ProgrammingError': 1,
+ 'start_time': datetime.datetime(2017, 7, 18, 6, 23, 5, 891945)}
+2017-07-18 14:23:12 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-07-18 14:23:27 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: similarweb)
+2017-07-18 14:23:27 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'similarweb', 'CONCURRENT_REQUESTS': 32, 'COOKIES_ENABLED': False, 'DOWNLOAD_TIMEOUT': 3, 'LOG_FILE': 'log/similarweb.log', 'NEWSPIDER_MODULE': 'similarweb.spiders', 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 402, 401, 403, 404, 408, 429, 302, 301, 304], 'RETRY_TIMES': 32, 'SPIDER_MODULES': ['similarweb.spiders']}
+2017-07-18 14:23:27 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-07-18 14:23:27 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-07-18 14:23:27 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-07-18 14:23:27 [scrapy.middleware] INFO: Enabled item pipelines:
+['similarweb.pipelines.MySQLPipeline']
+2017-07-18 14:23:27 [scrapy.core.engine] INFO: Spider opened
+2017-07-18 14:23:27 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-07-18 14:23:27 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-07-18 14:23:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.baidu.com> (referer: None)
+2017-07-18 14:23:30 [root] INFO: Enter similarweb spider...
+2017-07-18 14:23:42 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.baidu.com> (referer: None)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:/Users/Administrator/PycharmProjects/untitled/similarweb\similarweb\spiders\spider.py", line 46, in parse
+    cursor.execute(sql)
+  File "E:\python\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "E:\python\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "E:\python\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'dw_online.data_for_similarweb' doesn't exist")
+2017-07-18 14:23:42 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-07-18 14:23:42 [scrapy.core.engine] ERROR: Scraper close failure
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+TypeError: close_spider() takes 1 positional argument but 2 were given
+2017-07-18 14:23:42 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 211,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 1476,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 7, 18, 6, 23, 42, 417308),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/ProgrammingError': 1,
+ 'start_time': datetime.datetime(2017, 7, 18, 6, 23, 27, 765736)}
+2017-07-18 14:23:42 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-07-18 14:24:18 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: similarweb)
+2017-07-18 14:24:18 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'similarweb', 'CONCURRENT_REQUESTS': 32, 'COOKIES_ENABLED': False, 'DOWNLOAD_TIMEOUT': 3, 'LOG_FILE': 'log/similarweb.log', 'NEWSPIDER_MODULE': 'similarweb.spiders', 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 402, 401, 403, 404, 408, 429, 302, 301, 304], 'RETRY_TIMES': 32, 'SPIDER_MODULES': ['similarweb.spiders']}
+2017-07-18 14:24:18 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-07-18 14:24:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-07-18 14:24:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-07-18 14:24:18 [scrapy.middleware] INFO: Enabled item pipelines:
+['similarweb.pipelines.MySQLPipeline']
+2017-07-18 14:24:18 [scrapy.core.engine] INFO: Spider opened
+2017-07-18 14:24:19 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-07-18 14:24:19 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-07-18 14:24:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.baidu.com> (referer: None)
+2017-07-18 14:24:19 [root] INFO: Enter similarweb spider...
+2017-07-18 14:24:35 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.baidu.com> (referer: None)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:/Users/Administrator/PycharmProjects/untitled/similarweb\similarweb\spiders\spider.py", line 46, in parse
+    cursor.execute(sql)
+  File "E:\python\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "E:\python\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "E:\python\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'dw_online.data_for_similarweb' doesn't exist")
+2017-07-18 14:25:24 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: similarweb)
+2017-07-18 14:25:24 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'similarweb', 'CONCURRENT_REQUESTS': 32, 'COOKIES_ENABLED': False, 'DOWNLOAD_TIMEOUT': 3, 'LOG_FILE': 'log/similarweb.log', 'NEWSPIDER_MODULE': 'similarweb.spiders', 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 402, 401, 403, 404, 408, 429, 302, 301, 304], 'RETRY_TIMES': 32, 'SPIDER_MODULES': ['similarweb.spiders']}
+2017-07-18 14:25:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-07-18 14:25:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-07-18 14:25:25 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-07-18 14:25:25 [scrapy.middleware] INFO: Enabled item pipelines:
+['similarweb.pipelines.MySQLPipeline']
+2017-07-18 14:25:25 [scrapy.core.engine] INFO: Spider opened
+2017-07-18 14:25:25 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-07-18 14:25:25 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-07-18 14:25:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.baidu.com> (referer: None)
+2017-07-18 14:25:25 [root] INFO: Enter similarweb spider...
+2017-07-18 14:25:36 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.baidu.com> (referer: None)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "E:\python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:/Users/Administrator/PycharmProjects/untitled/similarweb\similarweb\spiders\spider.py", line 46, in parse
+    cursor.execute(sql)
+  File "E:\python\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "E:\python\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "E:\python\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "E:\python\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'dw_online.data_for_similarweb' doesn't exist")
+2017-07-18 14:25:36 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-07-18 14:25:36 [scrapy.core.engine] ERROR: Scraper close failure
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+TypeError: close_spider() takes 1 positional argument but 2 were given
+2017-07-18 14:25:36 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 211,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 1476,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 7, 18, 6, 25, 36, 486336),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/ProgrammingError': 1,
+ 'start_time': datetime.datetime(2017, 7, 18, 6, 25, 25, 323981)}
+2017-07-18 14:25:36 [scrapy.core.engine] INFO: Spider closed (finished)

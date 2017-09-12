@@ -1,0 +1,101 @@
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
+> /data1/spider/spider_scrapy/similarweb/similarweb/pipelines.py(60)process_item()
+-> if isinstance(item, SimilarwebUVItem):
+(Pdb) 
+> /data1/spider/spider_scrapy/similarweb/similarweb/pipelines.py(60)process_item()
+-> if isinstance(item, SimilarwebUVItem):
+(Pdb) 
+Traceback (most recent call last):
+  File "//usr/local/anaconda2/bin/scrapy", line 11, in <module>
+    sys.exit(execute())
+  File "/usr/local/anaconda2/lib/python2.7/site-packages/scrapy/cmdline.py", line 141, in execute
+    cmd.crawler_process = CrawlerProcess(settings)
+  File "/usr/local/anaconda2/lib/python2.7/site-packages/scrapy/crawler.py", line 238, in __init__
+    super(CrawlerProcess, self).__init__(settings)
+  File "/usr/local/anaconda2/lib/python2.7/site-packages/scrapy/crawler.py", line 129, in __init__
+    self.spider_loader = _get_spider_loader(settings)
+  File "/usr/local/anaconda2/lib/python2.7/site-packages/scrapy/crawler.py", line 325, in _get_spider_loader
+    return loader_cls.from_settings(settings.frozencopy())
+  File "/usr/local/anaconda2/lib/python2.7/site-packages/scrapy/spiderloader.py", line 41, in from_settings
+    return cls(settings)
+  File "/usr/local/anaconda2/lib/python2.7/site-packages/scrapy/spiderloader.py", line 22, in __init__
+    self._load_all_spiders()
+  File "/usr/local/anaconda2/lib/python2.7/site-packages/scrapy/spiderloader.py", line 31, in _load_all_spiders
+    for module in walk_modules(name):
+  File "/usr/local/anaconda2/lib/python2.7/site-packages/scrapy/utils/misc.py", line 71, in walk_modules
+    submod = import_module(fullpath)
+  File "/usr/local/anaconda2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py", line 44
+    cursor.execute(sql)`
+                       ^
+SyntaxError: invalid syntax
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
+Traceback (most recent call last):
+  File "/usr/local/python2.7/bin/scrapy", line 11, in <module>
+    load_entry_point('Scrapy==1.2.1', 'console_scripts', 'scrapy')()
+  File "/usr/local/python2.7/lib/python2.7/site-packages/scrapy/cmdline.py", line 141, in execute
+    cmd.crawler_process = CrawlerProcess(settings)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/scrapy/crawler.py", line 240, in __init__
+    configure_logging(self.settings)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/scrapy/utils/log.py", line 100, in configure_logging
+    handler = _get_handler(settings)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/scrapy/utils/log.py", line 109, in _get_handler
+    handler = logging.FileHandler(filename, encoding=encoding)
+  File "/usr/local/python2.7/lib/python2.7/logging/__init__.py", line 913, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "/usr/local/python2.7/lib/python2.7/logging/__init__.py", line 945, in _open
+    stream = codecs.open(self.baseFilename, self.mode, self.encoding)
+  File "/usr/local/python2.7/lib/python2.7/codecs.py", line 896, in open
+    file = __builtin__.open(filename, mode, buffering)
+IOError: [Errno 13] Permission denied: '/data1/spider/spider_scrapy/similarweb/log/similarweb.log'
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
+Traceback (most recent call last):
+  File "/usr/local/python2.7/bin/scrapy", line 11, in <module>
+    load_entry_point('Scrapy==1.2.1', 'console_scripts', 'scrapy')()
+  File "/usr/local/python2.7/lib/python2.7/site-packages/scrapy/cmdline.py", line 141, in execute
+    cmd.crawler_process = CrawlerProcess(settings)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/scrapy/crawler.py", line 240, in __init__
+    configure_logging(self.settings)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/scrapy/utils/log.py", line 100, in configure_logging
+    handler = _get_handler(settings)
+  File "/usr/local/python2.7/lib/python2.7/site-packages/scrapy/utils/log.py", line 109, in _get_handler
+    handler = logging.FileHandler(filename, encoding=encoding)
+  File "/usr/local/python2.7/lib/python2.7/logging/__init__.py", line 913, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "/usr/local/python2.7/lib/python2.7/logging/__init__.py", line 945, in _open
+    stream = codecs.open(self.baseFilename, self.mode, self.encoding)
+  File "/usr/local/python2.7/lib/python2.7/codecs.py", line 896, in open
+    file = __builtin__.open(filename, mode, buffering)
+IOError: [Errno 13] Permission denied: '/data1/spider/spider_scrapy/similarweb/log/similarweb.log'
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
+/data1/spider/spider_scrapy/similarweb/similarweb/spiders/spider.py:4: ScrapyDeprecationWarning: Module `scrapy.spider` is deprecated, use `scrapy.spiders` instead
+  from scrapy.spider import Spider
